@@ -1,0 +1,145 @@
+@import "mobile.css" screen and (max-width: 500px);
+@import "tablet.css" (min-width: 501px) and (max-width: 768px);
+@import "laptop.css" (min-width: 769px);
+/*@import "wide-screen.css" (min-width: 1201px);    */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b2bec3;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin: 1% 3%;
+}
+header img{
+    border-radius: 50%;
+    border: 5px solid red;
+    box-shadow: 2px 2px 6px black,
+                -2px -2px 6px black;
+}
+header h1{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 5px black;
+}
+.marquee-address{
+    padding: 0.2% 0;
+    background-color: blue;
+    color: yellow;
+    font-size: 20px;
+}
+main{
+    margin: 1% 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    width: 30%;
+} 
+.principal{
+    width: 65%;
+}
+.content a{
+    margin: 1%;
+    padding: 2%;
+    border-radius: 15px;
+    display: block;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+.principal figure{
+    padding: 3%;
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 10px 10px 0 0;
+    color: red;
+    text-shadow: 1px 1px 1px black;
+}
+.principal figure img{
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black,
+                -1px -1px 2px black;
+}
+.principal p{
+    padding: 3%;
+    background-color: yellow;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.principal .contact-us{
+    padding: 3%;
+    background-color: blue;
+    border-radius: 0 0 10px 10px;
+}
+.contact-no h3,a, .contact-email h3,a{
+    display: inline-block;
+    color: white;
+}
+.container{
+    margin: 1% 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.snapshots, .form-fill, .office-contacts{
+    width: 30%;
+}
+.snapshots img{
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    transition: transform .2s;
+}
+.snapshots img:hover{
+    -ms-transform: scale(2.5); /* IE 9 */
+    -webkit-transform: scale(2.5); /* Safari 3-8 */
+    transform: scale(2.5); 
+}
+.form-fill marquee a{
+    margin: 1%;
+    padding: 3%;
+    border-radius: 15px;
+    display: block;
+    background-color: yellow;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+}
+.office-contacts a{
+    margin: 1%;
+    padding: 3%;
+    border-radius: 15px;
+    display: block;
+    background-color: limegreen;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+}
+footer{
+    padding: 1%;
+    color: white;
+    background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 500%;
+    animation: footer-animation 15s infinite;
+}
+@keyframes footer-animation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+footer marquee h3,a{ 
+    display: inline-block;
+    text-decoration: none; 
+}
